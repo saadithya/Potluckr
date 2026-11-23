@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Potluckr — Group Meal Planning Made Easy</title>
+  <meta name="description" content="Potluckr helps groups of friends, family, roommates and flatmates plan meals together: shared recipes, fair cooking rotation, voting, shopping lists and a shared pantry." />
+  <meta name="theme-color" content="#F97316" />
+  <style>
+    :root {
+      --orange: #F97316;
+      --orange-dark: #EA580C;
+      --ink: #1F2937;
+      --muted: #6B7280;
+      --bg: #F9FAFB;
+      --card: #FFFFFF;
+      --border: #E5E7EB;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--orange-dark); }
+    .wrap { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+    header.site {
+      background: linear-gradient(135deg, var(--orange) 0%, #FB923C 100%);
+      color: #fff;
+      padding: 64px 0 72px;
+    }
+    .brand { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
+    .brand .logo {
+      width: 44px; height: 44px; border-radius: 12px; background: rgba(255,255,255,0.2);
+      display: flex; align-items: center; justify-content: center; font-size: 24px;
+    }
+    .brand .name { font-size: 22px; font-weight: 800; letter-spacing: -0.02em; }
+    h1 { font-size: 40px; line-height: 1.15; margin: 0 0 12px; font-weight: 800; letter-spacing: -0.03em; }
+    .tagline { font-size: 19px; max-width: 640px; opacity: 0.95; margin: 0 0 28px; }
+    .cta { display: flex; flex-wrap: wrap; gap: 12px; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: #fff; color: var(--orange-dark);
+      padding: 13px 22px; border-radius: 12px; font-weight: 700; text-decoration: none;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.12); transition: transform 0.15s ease;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn.ghost { background: transparent; color: #fff; box-shadow: none; border: 2px solid rgba(255,255,255,0.6); }
+    section { padding: 56px 0; }
+    section h2 { font-size: 28px; margin: 0 0 8px; letter-spacing: -0.02em; }
+    section .lead { color: var(--muted); margin: 0 0 32px; font-size: 17px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
+    .card {
+      background: var(--card); border: 1px solid var(--border); border-radius: 16px;
+      padding: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+    }
+    .card .ico { font-size: 26px; margin-bottom: 12px; }
+    .card h3 { margin: 0 0 6px; font-size: 18px; }
+    .card p { margin: 0; color: var(--muted); font-size: 15px; }
+    .privacy-band { background: #FFF7ED; border-top: 1px solid #FED7AA; border-bottom: 1px solid #FED7AA; text-align: center; }
+    .privacy-band .link { font-weight: 700; text-decoration: none; font-size: 18px; }
+    footer.site {
+      padding: 40px 0 56px; color: var(--muted); font-size: 14px; text-align: center;
+    }
+    footer.site a { color: var(--muted); text-decoration: none; margin: 0 6px; }
+    footer.site a:hover { text-decoration: underline; }
+    .legal-links { margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <header class="site">
+    <div class="wrap">
+      <div class="brand">
+        <div class="logo">🍲</div>
+        <div class="name">Potluckr</div>
+      </div>
+      <h1>Plan meals together,<br />without the group-chat chaos.</h1>
+      <p class="tagline">
+        Potluckr helps friends, family, roommates and flatmates decide who cooks what and when —
+        with shared recipes, a fair cooking rotation, group voting, shopping lists and a shared pantry.
+      </p>
+      <div class="cta">
+        <a class="btn" href="https://play.google.com/store/apps/details?id=com.saadithya.potluckr" target="_blank" rel="noopener">
+          ▶ Get it on Google Play
+        </a>
+        <a class="btn ghost" href="privacy_policy.html">Read the Privacy Policy</a>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="wrap">
+      <h2>Everything your cooking group needs</h2>
+      <p class="lead">One place to plan, decide, shop and cook — together.</p>
+      <div class="grid">
+        <div class="card">
+          <div class="ico">👥</div>
+          <h3>Groups &amp; invites</h3>
+          <p>Create a cooking group, invite members and manage who's in it.</p>
+        </div>
+        <div class="card">
+          <div class="ico">🍳</div>
+          <h3>Shared recipes</h3>
+          <p>Save family recipes with photos and ingredients your whole group can use.</p>
+        </div>
+        <div class="card">
+          <div class="ico">🗓️</div>
+          <h3>Fair meal planning</h3>
+          <p>Plan upcoming meals with a rotating, balanced cooking schedule.</p>
+        </div>
+        <div class="card">
+          <div class="ico">🗳️</div>
+          <h3>Group voting</h3>
+          <p>Let everyone vote on what to cook, then confirm the final pick.</p>
+        </div>
+        <div class="card">
+          <div class="ico">🛒</div>
+          <h3>Shopping lists</h3>
+          <p>Build a shared grocery list and divide who buys what.</p>
+        </div>
+        <div class="card">
+          <div class="ico">🥫</div>
+          <h3>Shared pantry</h3>
+          <p>Track what's already on hand to avoid duplicates and waste.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="privacy-band">
+    <div class="wrap">
+      <h2>Your privacy matters to us</h2>
+      <p class="lead" style="margin-bottom:16px;">
+        Potluckr collects only what it needs to work — and we never sell your personal information.
+      </p>
+      <a class="link" href="privacy_policy.html">View our full Privacy Policy &rarr;</a>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Account &amp; data deletion</h2>
+      <p class="lead">
+        You can permanently delete your Potluckr account and associated data at any time,
+        right from the app or from the web — no need to contact us.
+      </p>
+      <a class="btn" style="background:var(--orange);color:#fff;" href="https://potluckr.airozgar.com/delete-account" target="_blank" rel="noopener">
+        Delete my account
+      </a>
+      <p style="color:var(--muted);font-size:14px;margin-top:16px;">
+        Deleting your account removes your profile, recipes, pantry items, created meal plans and
+        invitations, and scrubs your personal references from shared records.
+      </p>
+    </div>
+  </section>
+
+  <footer class="site">
+    <div class="wrap">
+      <div>© <span id="year">2026</span> Potluckr. All rights reserved.</div>
+      <div class="legal-links">
+        <a href="privacy_policy.html">Privacy Policy</a> ·
+        <a href="https://potluckr.airozgar.com/delete-account" target="_blank" rel="noopener">Delete Account</a> ·
+        <a href="mailto:support@airozgar.com">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
